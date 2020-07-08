@@ -131,43 +131,31 @@ img {
 
   margin-left: auto;
 
-  color: var(--text-color);
-
   font-weight: 500;
   letter-spacing: 0.02em;
-}
-
-.auth-nav > .items::before {
-  content: "";
-  display: inline-block;
-
-  margin-right: 10px;
-}
-
-.items:nth-child(1)::before {
-  width: 16px;
-  height: 11.2px;
-  background-image: url(../images/IconSocial/envelope.svg);
-}
-
-.items:nth-child(2)::before {
-  width: 10px;
-  height: 15px;
-  background-image: url(../images/IconSocial/smartphone.svg);
 }
 
 .auth-nav .items:not(:last-child) {
   margin-right: 30px;
 }
+.auth-nav .email {
+  color: var(--text-color);
+}
+
+.auth-nav .phone {
+  color: var(--text-color);
+}
 
 .auth-nav .email:hover,
 .auth-nav .email:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 .auth-nav .phone:hover,
 .auth-nav .phone:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* Уникальний контент index.html */
@@ -377,16 +365,16 @@ img {
   display: flex;
 }
 
-.lab .items {
+/* .lab .items {
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
 .lab .items:not(:last-child) {
   margin-right: 30px;
 }
 
-.lab-img {
+.lab-border {
   display: flex;
   border: 1px solid var(--border-lab-color);
   border-radius: 4px;
@@ -396,6 +384,20 @@ img {
 
   width: 170px;
   height: 90px;
+}
+
+.lab-border:hover,
+.lab-border:focus {
+  border-color: var(--accent-color);
+}
+
+.lab-img {
+  fill: var(--border-lab-color);
+}
+
+.lab-img:hover,
+.lab-img:focus {
+  fill: var(--accent-color);
 }
 
 /* Footer */
