@@ -355,6 +355,23 @@ img {
 .team-flex-items:not(:last-child) {
   margin-right: 10px;
 }
+
+.team-soc-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--border-lab-color);
+  background-color: var(--accent-color);
+}
+
+.team-soc-icon:hover {
+  color: var(--white-color);
+}
+
+.team-soc-img {
+  fill: currentColor;
+}
+
 /*  Section #4 Team BG color */
 .team {
   background-color: var(--icon-and-section-bg-color);
