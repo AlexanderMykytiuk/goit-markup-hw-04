@@ -137,35 +137,47 @@ img {
 .auth-nav .items:not(:last-child) {
   margin-right: 30px;
 }
-.auth-nav .email {
+
+.position-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.email-size {
   width: 16px;
-  height: 11px;
-
-  color: var(--text-color);
+  height: 12px;
 }
 
-.auth-nav .phone {
+.phone-size {
   width: 10px;
-  height: 10.5px;
-
-  color: var(--text-color);
+  height: 15px;
 }
-
 .auth-nav .margin-icon {
   margin-right: 10px;
 }
 
-.auth-nav .email:hover,
-.auth-nav .email:focus {
+.position-item .email, 
+.position-item .phone {
+  color: var(--text-color);
+  fill: var(--text-color);
+}
+
+.position-item:hover .email,
+.position-item:hover .phone {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
 
-.auth-nav .phone:hover,
-.auth-nav .phone:focus {
-  color: var(--accent-color);
-  fill: var(--accent-color);
+ 
+/* .test {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
+.lab-border:hover {
+
+*/
 
 /* Уникальний контент index.html */
 
@@ -392,11 +404,6 @@ img {
   display: flex;
 }
 
-/* .lab .items {
-  margin-right: auto;
-  margin-left: auto;
-} */
-
 .lab .items:not(:last-child) {
   margin-right: 30px;
 }
@@ -413,19 +420,22 @@ img {
   height: 90px;
 }
 
-.lab-border:hover,
-.lab-border:focus {
-  border-color: var(--accent-color);
-}
-
 .lab-img {
   fill: var(--border-lab-color);
 }
 
-.lab-img:hover,
-.lab-img:focus {
+.lab-border:hover {
+  border-color: var(--accent-color);
+}
+
+.lab-border:hover .lab-img {
   fill: var(--accent-color);
 }
+
+/* MAX
+.lab-border:hover .lab-img {
+  fill:red;
+}  */
 
 /* Footer */
 
