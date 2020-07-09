@@ -169,15 +169,10 @@ img {
   fill: var(--accent-color);
 }
 
- 
-/* .test {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+.position-item .email:focus,
+.position-item .phone:focus {
+  color: var(--accent-color);
 }
-.lab-border:hover {
-
-*/
 
 /* Уникальний контент index.html */
 
@@ -238,7 +233,7 @@ img {
 
 /* Section #2 */
 .paragraph-title {
-  margin-top: 30;
+  margin-top: 0;
   margin-bottom: 10px;
 
   text-transform: uppercase;
@@ -248,7 +243,20 @@ img {
   display: flex;
 }
 
-.items-img::before {
+.benefits-bg-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+
+  background-color: var(--icon-and-section-bg-color);
+}
+
+/* .items-img::before {
   display: block;
   content: "";
   height: 120px;
@@ -274,7 +282,7 @@ img {
 }
 .benefits .items-img:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .benefits .text {
   margin-top: 0;
@@ -367,31 +375,37 @@ img {
 
 .team-flex {
   display: flex;
+  justify-content: center;
 }
-
-/* .team-flex-items {
-  padding-bottom: 24px;
-} */
 
 .team-flex-items:not(:last-child) {
   margin-right: 10px;
 }
 
 .team-soc-icon {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  color: var(--border-lab-color);
-  background-color: var(--accent-color);
 }
 
-.team-soc-icon:hover {
-  color: var(--white-color);
-}
+ .team-soc-icon:hover {
+  background-color: var(--accent-color);
+} 
 
 .team-soc-img {
-  fill: currentColor;
+  fill: var(--border-lab-color);
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+ 
+ .team-soc-img:hover {
+  fill: var(--white-color);
 }
 
 /*  Section #4 Team BG color */
@@ -431,11 +445,6 @@ img {
 .lab-border:hover .lab-img {
   fill: var(--accent-color);
 }
-
-/* MAX
-.lab-border:hover .lab-img {
-  fill:red;
-}  */
 
 /* Footer */
 
@@ -483,6 +492,11 @@ img {
 
 .soc-icon-list-item:not(:last-child) {
   margin-right: 10px;
+}
+
+.soc-icon-list-item {
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .sent-title {
@@ -539,10 +553,11 @@ img {
 
 .card-content {
   width: 370px;
-  padding-top: 20px;
+  
   padding-right: 24px;
   padding-left: 24px;
   padding-bottom: 20px;
+
   border-right: 1px solid var(--border-card-color);
   border-bottom: 1px solid var(--border-card-color);
   border-left: 1px solid var(--border-card-color);
@@ -579,8 +594,12 @@ img {
   margin-bottom: 0;
 }
 
+.card-img {
+  margin-bottom: 20px;
+}
+
 .examples .title {
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 4px;
 
   color: var(--primary-text-color);
