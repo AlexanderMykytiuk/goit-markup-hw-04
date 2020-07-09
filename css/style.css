@@ -127,7 +127,6 @@ img {
 
 .auth-nav {
   display: flex;
-  align-items: center;
 
   margin-left: auto;
 
@@ -139,11 +138,21 @@ img {
   margin-right: 30px;
 }
 .auth-nav .email {
+  width: 16px;
+  height: 11px;
+
   color: var(--text-color);
 }
 
 .auth-nav .phone {
+  width: 10px;
+  height: 10.5px;
+
   color: var(--text-color);
+}
+
+.auth-nav .margin-icon {
+  margin-right: 10px;
 }
 
 .auth-nav .email:hover,
@@ -348,15 +357,16 @@ img {
   display: flex;
 }
 
-.team-flex-items {
+/* .team-flex-items {
   padding-bottom: 24px;
-}
+} */
 
 .team-flex-items:not(:last-child) {
   margin-right: 10px;
 }
 
 .team-soc-icon {
+  display: block;
   width: 44px;
   height: 44px;
   border-radius: 50%;
