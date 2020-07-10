@@ -387,6 +387,8 @@ img {
   align-items: center;
   justify-content: center;
 
+  fill: var(--border-lab-color);
+
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -404,8 +406,8 @@ img {
   height: 44px;
 }
  
- .team-soc-img:hover {
-  fill: var(--white-color);
+.team-soc-icon:hover .team-soc-img {
+  --color3: var(--white-color);
 }
 
 /*  Section #4 Team BG color */
